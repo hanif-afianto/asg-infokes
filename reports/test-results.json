@@ -1,0 +1,159 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\CODE.ID\\Desktop\\Personal\\personal_repo\\Automation-openRMS\\playwright.config.ts",
+    "rootDir": "C:/Users/CODE.ID/Desktop/Personal/personal_repo/Automation-openRMS/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "reports/html"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/CODE.ID/Desktop/Personal/personal_repo/Automation-openRMS/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/CODE.ID/Desktop/Personal/personal_repo/Automation-openRMS/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "3way",
+    "version": "1.51.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "patient\\registerPatient.test.ts",
+      "file": "patient/registerPatient.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Register Patient Tests",
+          "file": "patient/registerPatient.test.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "User should be able to register a new patient",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 48,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30960,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\CODE.ID\\Desktop\\Personal\\personal_repo\\Automation-openRMS\\src\\pages\\base\\BasePage.ts",
+                            "column": 21,
+                            "line": 19
+                          },
+                          "message": "Error: page.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//input[@type=submit]')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\base\\BasePage.ts:19\n\n\u001b[0m \u001b[90m 17 |\u001b[39m\n \u001b[90m 18 |\u001b[39m   \u001b[36masync\u001b[39m click(selector\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(selector)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m   }\n \u001b[90m 21 |\u001b[39m\n \u001b[90m 22 |\u001b[39m   \u001b[36masync\u001b[39m dblclick(selector\u001b[33m:\u001b[39m string) {\u001b[0m\n\u001b[2m    at RegisterPatientPage.click (C:\\Users\\CODE.ID\\Desktop\\Personal\\personal_repo\\Automation-openRMS\\src\\pages\\base\\BasePage.ts:19:21)\u001b[22m\n\u001b[2m    at RegisterPatientPage.navigateToPatientRecord (C:\\Users\\CODE.ID\\Desktop\\Personal\\personal_repo\\Automation-openRMS\\src\\pages\\patient\\RegisterPatientPage.ts:6:20)\u001b[22m\n\u001b[2m    at C:\\Users\\CODE.ID\\Desktop\\Personal\\personal_repo\\Automation-openRMS\\src\\tests\\patient\\registerPatient.test.ts:11:31\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-03-12T07:49:25.687Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\CODE.ID\\Desktop\\Personal\\personal_repo\\Automation-openRMS\\test-results\\patient-registerPatient-Re-91df7-e-to-register-a-new-patient-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\CODE.ID\\Desktop\\Personal\\personal_repo\\Automation-openRMS\\test-results\\patient-registerPatient-Re-91df7-e-to-register-a-new-patient-chromium\\video.webm"
+                        },
+                        {
+                          "name": "_prompt-1",
+                          "contentType": "text/markdown",
+                          "body": "IyBJbnN0cnVjdGlvbnMKCi0gRm9sbG93aW5nIFBsYXl3cmlnaHQgdGVzdCBmYWlsZWQuCi0gRXhwbGFpbiB3aHksIGJlIGNvbmNpc2UsIHJlc3BlY3QgUGxheXdyaWdodCBiZXN0IHByYWN0aWNlcy4KLSBQcm92aWRlIGEgc25pcHBldCBvZiBjb2RlIHdpdGggdGhlIGZpeCwgaWYgcG9zc2libGUuCgojIFRlc3QgaW5mbwoKLSBOYW1lOiBSZWdpc3RlciBQYXRpZW50IFRlc3RzID4+IFVzZXIgc2hvdWxkIGJlIGFibGUgdG8gcmVnaXN0ZXIgYSBuZXcgcGF0aWVudAotIExvY2F0aW9uOiBDOlxVc2Vyc1xDT0RFLklEXERlc2t0b3BcUGVyc29uYWxccGVyc29uYWxfcmVwb1xBdXRvbWF0aW9uLW9wZW5STVNcc3JjXHRlc3RzXHBhdGllbnRccmVnaXN0ZXJQYXRpZW50LnRlc3QudHM6Nzo3CgojIEVycm9yIGRldGFpbHMKCmBgYApFcnJvcjogcGFnZS5jbGljazogVGVzdCB0aW1lb3V0IG9mIDMwMDAwbXMgZXhjZWVkZWQuCkNhbGwgbG9nOgogIC0gd2FpdGluZyBmb3IgbG9jYXRvcignLy9pbnB1dFtAdHlwZT1zdWJtaXRdJykKCiAgICBhdCBSZWdpc3RlclBhdGllbnRQYWdlLmNsaWNrIChDOlxVc2Vyc1xDT0RFLklEXERlc2t0b3BcUGVyc29uYWxccGVyc29uYWxfcmVwb1xBdXRvbWF0aW9uLW9wZW5STVNcc3JjXHBhZ2VzXGJhc2VcQmFzZVBhZ2UudHM6MTk6MjEpCiAgICBhdCBSZWdpc3RlclBhdGllbnRQYWdlLm5hdmlnYXRlVG9QYXRpZW50UmVjb3JkIChDOlxVc2Vyc1xDT0RFLklEXERlc2t0b3BcUGVyc29uYWxccGVyc29uYWxfcmVwb1xBdXRvbWF0aW9uLW9wZW5STVNcc3JjXHBhZ2VzXHBhdGllbnRcUmVnaXN0ZXJQYXRpZW50UGFnZS50czo2OjIwKQogICAgYXQgQzpcVXNlcnNcQ09ERS5JRFxEZXNrdG9wXFBlcnNvbmFsXHBlcnNvbmFsX3JlcG9cQXV0b21hdGlvbi1vcGVuUk1TXHNyY1x0ZXN0c1xwYXRpZW50XHJlZ2lzdGVyUGF0aWVudC50ZXN0LnRzOjExOjMxCmBgYAoKIyBQYWdlIHNuYXBzaG90CgpgYGB5YW1sCi0gYmFubmVyOgogIC0gbmF2aWdhdGlvbjoKICAgIC0gbGluazoKICAgICAgLSBpbWcKICAgIC0gbGlzdDoKICAgICAgLSBsaXN0aXRlbTog74CHIGFkbWluIO+DlwogICAgICAtIGxpc3RpdGVtOgogICAgICAgIC0gbGluayAi74GBIFJlZ2lzdHJhdGlvbiBEZXNrIO+DlyIKICAgICAgLSBsaXN0aXRlbToKICAgICAgICAtIGxpbmsgIkZpbmFsaXphciBzZXNpw7NuIO+CiyIKLSBsaXN0Ci0gaGVhZGluZyAiSW5ncmVzw7MgY29tbyBTdXBlciBVc2VyIChhZG1pbikgYSBSZWdpc3RyYXRpb24gRGVzay4iIFtsZXZlbD00XQotIGxpbmsgIu+AgiBCdXNjYXIgcmVnaXN0cm8gZGVsIHBhY2llbnRlIgotIGxpbmsgIu+BsyBDb25zdWx0YXMgYWN0aXZhcyIKLSBsaW5rICLugIAgQ2FwdHVyYXIgc2lnbm9zIHZpdGFsZXMiCi0gbGluayAi74CHIFJlZ2lzdHJhciB1biBwYWNpZW50ZSIKLSBsaW5rICLvgbMgQ29uc3VsdGFzIHByb2dyYW1hZGFzIgotIGxpbmsgIu+AoiBJbmZvcm1lcyIKLSBsaW5rICLvgqAgQWRtaW5pc3RyYWNpw7NuIGluZm9ybWFjacOzbiIKLSBsaW5rICLvgq4gQ29uZmlndXJlIE1ldGFkYXRhIgotIGxpbmsgIu+ChSBBZG1pbmlzdHJhY2nDs24gZGUgc2lzdGVtYSIKYGBgCgojIFRlc3Qgc291cmNlCgpgYGB0cwogICAxIHwgaW1wb3J0IHsgUGFnZSwgZXhwZWN0IH0gZnJvbSAiQHBsYXl3cmlnaHQvdGVzdCI7CiAgIDIgfAogICAzIHwgZXhwb3J0IGNsYXNzIEJhc2VQYWdlIHsKICAgNCB8ICAgcHJvdGVjdGVkIHBhZ2U6IFBhZ2U7CiAgIDUgfAogICA2IHwgICBjb25zdHJ1Y3RvcihwYWdlOiBQYWdlKSB7CiAgIDcgfCAgICAgdGhpcy5wYWdlID0gcGFnZTsKICAgOCB8ICAgfQogICA5IHwKICAxMCB8ICAgYXN5bmMgbmF2aWdhdGVUbyhwYXRoOiBzdHJpbmcpIHsKICAxMSB8ICAgICBhd2FpdCB0aGlzLnBhZ2UuZ290byhwYXRoKTsKICAxMiB8ICAgfQogIDEzIHwKICAxNCB8ICAgYXN5bmMgbmF2aWdhdGVUb0xvZ2luKCkgewogIDE1IHwgICAgIGF3YWl0IHRoaXMubmF2aWdhdGVUbygiL2xvZ2luLmh0bSIpOwogIDE2IHwgICB9CiAgMTcgfAogIDE4IHwgICBhc3luYyBjbGljayhzZWxlY3Rvcjogc3RyaW5nKSB7Cj4gMTkgfCAgICAgYXdhaXQgdGhpcy5wYWdlLmNsaWNrKHNlbGVjdG9yKTsKICAgICB8ICAgICAgICAgICAgICAgICAgICAgXiBFcnJvcjogcGFnZS5jbGljazogVGVzdCB0aW1lb3V0IG9mIDMwMDAwbXMgZXhjZWVkZWQuCiAgMjAgfCAgIH0KICAyMSB8CiAgMjIgfCAgIGFzeW5jIGRibGNsaWNrKHNlbGVjdG9yOiBzdHJpbmcpIHsKICAyMyB8ICAgICBhd2FpdCB0aGlzLnBhZ2UuZGJsY2xpY2soc2VsZWN0b3IpOwogIDI0IHwgICB9CiAgMjUgfAogIDI2IHwgICBhc3luYyBlbnRlclRleHQoc2VsZWN0b3I6IHN0cmluZywgdGV4dDogc3RyaW5nKSB7CiAgMjcgfCAgICAgYXdhaXQgdGhpcy5wYWdlLmZpbGwoc2VsZWN0b3IsIHRleHQpOwogIDI4IHwgICB9CiAgMjkgfAogIDMwIHwgICBhc3luYyBzZWxlY3RPcHRpb24oc2VsZWN0b3I6IHN0cmluZywgdGV4dDogc3RyaW5nKSB7CiAgMzEgfCAgICAgYXdhaXQgdGhpcy5wYWdlLnNlbGVjdE9wdGlvbihzZWxlY3RvciwgeyB2YWx1ZTogdGV4dH0pCiAgMzIgfCAgIH0KICAzMyB8CiAgMzQgfCAgIGFzeW5jIHZlcmlmeVRleHQoc2VsZWN0b3I6IHN0cmluZywgZXhwZWN0ZWRUZXh0OiBzdHJpbmcpIHsKICAzNSB8ICAgICBhd2FpdCBleHBlY3QodGhpcy5wYWdlLmxvY2F0b3Ioc2VsZWN0b3IpKS50b0NvbnRhaW5UZXh0KGV4cGVjdGVkVGV4dCk7CiAgMzYgfCAgIH0KICAzNyB8CiAgMzggfCAgIGFzeW5jIHZlcmlmeVRleHRJbkNlbGwoZXhwZWN0ZWRUZXh0OiBzdHJpbmcpIHsKICAzOSB8ICAgICBhd2FpdCBleHBlY3QodGhpcy5wYWdlLmdldEJ5Um9sZSgnY2VsbCcsIHsgbmFtZTogZXhwZWN0ZWRUZXh0IH0pKS50b0NvbnRhaW5UZXh0KGV4cGVjdGVkVGV4dCk7CiAgNDAgfCAgIH0KICA0MSB8IH0KYGBg"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\CODE.ID\\Desktop\\Personal\\personal_repo\\Automation-openRMS\\test-results\\patient-registerPatient-Re-91df7-e-to-register-a-new-patient-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "86acc5e11e2017ebe1fb-5560412ab9016faa79e6",
+              "file": "patient/registerPatient.test.ts",
+              "line": 7,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-03-12T07:49:24.063Z",
+    "duration": 32931.46999999997,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

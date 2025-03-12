@@ -1,0 +1,3 @@
+patientSearchType,patientNameOrId,expectedNameOrId
+name,Jane Doe,Jane Doe
+id,100HWJ,100HWJ
