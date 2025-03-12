@@ -61,7 +61,7 @@ Automation-openRMS/
 ## Setup & Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/hanifafianto/Automation-openRMS.git
+   git clone https://github.com/hanif-afianto/Automation-openRMS.git
    ```
 2. Navigate to the project folder:
    ```sh
